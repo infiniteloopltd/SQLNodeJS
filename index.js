@@ -1,7 +1,7 @@
 const sql = require("msnodesqlv8"); // npm add msnodesqlv8 (Windows Only)
 
 // ODBC Connection string
-const connectionString = "Server=localhost;Database=Library;Trusted_Connection=Yes;Driver={SQL Server Native Client 11.0}";
+const connectionString = "Server=localhost;Database=Library;Trusted_Connection=Yes;Driver={SQL Server};";
 
 sql.query(connectionString, "SELECT * FROM Students" , (err, recordset) => {
     if(err) {
